@@ -1,14 +1,14 @@
 const Sauce = require('../models/sauce')
 const fs = require('fs')
 
-// Récuperer la liste de toutes les sauces
+// Récuperer array de toutes les sauces
 exports.getAllSauces = (req, res, next) => {
     Sauce.find()
         .then(sauces => res.status(200).json(sauces))
         .catch(error => res.status(400).json({ error: error }))
 }
 
-// Récuperer une seule sauce
+// Récuperer une sauce (page indiv)
 exports.getOneSauce = (req, res, next) => {
     Sauce.findOne({ _id: req.params.id })
         .then(sauce => res.status(200).json(sauce))
@@ -28,8 +28,8 @@ exports.createSauce = (req, res, next) => {
         .catch(error => res.status(400).json({ error }))
 }
 
-// Modifier une sauce
-exports.modifySauce = (req, res, next) => {
+// update sauce
+exports.updateSauce = (req, res, next) => {
     const sauceObject = req.file ?
         {
             ...JSON.parse(req.body.sauce),
@@ -40,7 +40,7 @@ exports.modifySauce = (req, res, next) => {
         .catch(error => res.status(400).json({ error }))
 }
 
-// Supprimer une sauce
+// Delete Sauce
 exports.deleteSauce = (req, res, next) => {
     Sauce.findOne({ _id: req.params.id })
         .then(sauce => {

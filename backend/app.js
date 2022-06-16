@@ -1,8 +1,9 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const cors = require("cors")
-const app = express();
-const path = require('path');
+const cors = require("cors") // permet d'autoriser les origines croisées
+const app = express(); // Crée une application express
+const path = require('path'); // le module fournit des utilitaires pour travailler avec le chemin du fichier et du répertoire
+
 
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
