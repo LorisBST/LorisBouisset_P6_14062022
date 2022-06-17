@@ -11,7 +11,7 @@ const sauceSchema = mongoose.Schema({ // Utilisation de la méthode schéma de m
     likes: { type: Number, default: 0 },
     dislikes: { type: Number, default: 0 },
     usersLiked: { type: [String] },
-    usersDisliked: { type: [String] },
+    usersDisliked: { type: [String] }
 });
 
 module.exports = mongoose.model('Sauce', sauceSchema); // model exporte ce modèle en un modèle utilisable sur d'autres fichiers JS.
