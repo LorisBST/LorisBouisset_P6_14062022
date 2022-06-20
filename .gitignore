@@ -1,5 +1,4 @@
 
-backend/.env
 
 # exclude everything
 backend/images/*
