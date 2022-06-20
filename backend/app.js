@@ -23,7 +23,6 @@ mongoose.connect(process.env.SECRET_DTB,
 
 app.use(cors())
 app.use(express.json()); // récupère les objets JSON
-
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use('/api/sauces', sauceRoutes);
 app.use('/api/auth', userRoutes);
