@@ -5,3 +5,5 @@ backend/images/*
 
 # exception to the rule
 !backend/images/.gitkeep 
+
+front/node_modules
