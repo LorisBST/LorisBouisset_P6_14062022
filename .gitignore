@@ -1,3 +1,8 @@
 
 backend/.env
-backend/images
+
+# exclude everything
+backend/images/*
+
+# exception to the rule
+!backend/images/.gitkeep 
