@@ -8,3 +8,4 @@ backend/images/*
 
 front/node_modules
 front/.vscode
+backend/node_modules
