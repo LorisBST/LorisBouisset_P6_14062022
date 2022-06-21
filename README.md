@@ -2,7 +2,8 @@
 P6 Web dev openclassrooms
 
 
-nodemon serveur pour démarrer le serveur backend 
+npm install pour amorçer le projet
+nodemon server pour démarrer le serveur backend 
 
 
 ng serve pour démarrer le front 
