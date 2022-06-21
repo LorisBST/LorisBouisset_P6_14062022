@@ -2,7 +2,7 @@
 .idea
 # exclude everything
 backend/images/*
-
+backend/.env
 # exception to the rule
 !backend/images/.gitkeep 
 
